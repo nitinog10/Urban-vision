@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanIQ Unified Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <header>
+    <h1>UrbanIQ Unified Platform</h1>
+  </header>
+
+  <main>
+    <!-- Smart Traffic Dashboard -->
+    <section id="traffic">
+      <h2>Smart Traffic Dashboard</h2>
+      <div id="map" style="height: 400px;"></div>
+    </section>
+
+    <!-- Pollution Heatmap -->
+    <section id="pollution">
+      <h2>Pollution Heatmap</h2>
+      <div id="pollutionMap" style="height: 400px;"></div>
+    </section>
+
+    <!-- Public Transport Optimizer -->
+    <section id="transport">
+      <h2>Public Transport Optimizer</h2>
+      <div id="transportRoutes"></div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQsEnzGEUv6cY9Il1q1Lfcep6xpetseLA&callback=initMap" async defer></script>
+</body>
+</html>
